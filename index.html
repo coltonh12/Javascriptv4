@@ -12,8 +12,10 @@
     <script src="index.js"></script>
     <script defer src="https://cdn.jsdelivr.net/gh/hankhank10/alpine-fetch@main/alpine-fetch.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
-    <div x-data="{thumbimage: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
+    <div x-data="{thumbimage: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail'),
+    otherimage: $fetchjson('https://dummyjson.com/products/2', jsonItem='thumbnail')}">
       <img alt="thumbnail" x-bind:src="thumbimage" />
+      <img alt="Thumbnail 2" x-bind:src="otherimage" />
       </div>
   </body>
 </html>
