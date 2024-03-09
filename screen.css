@@ -1,20 +1,21 @@
-/* styles.css */
+
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    @apply text-3xl font-bold mb-4;
-  }
-  
-  .grid {
-    @apply grid grid-cols-2 gap-6;
-  }
-  
-  img {
-    @apply rounded-lg shadow-md;
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
   
